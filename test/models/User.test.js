@@ -6,7 +6,7 @@ describe('Unit test for User class',()=>{
         expect(user.id).toBe(1);
         expect(user.username).toBe('blu3ming');
         expect(user.name).toBe('Josue Cruz');
-        expect(user.bio).toBe('');
+        expect(user.bio).toBe('Computer Engineer. Developer.');
         expect(user.dateCreated).toBe(0);
         expect(user.lastUpdated).toBe(0);
     });
