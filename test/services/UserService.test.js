@@ -16,6 +16,6 @@ describe("Test for UserService", () =>{
         expect(UserInfoInList[0]).toBe(1);
         expect(UserInfoInList[1]).toBe('blu3ming');
         expect(UserInfoInList[2]).toBe('Josue Cruz');
-        expect(UserInfoInList[3]).toBe("Sin Bio");
+        expect(UserInfoInList[3]).toBe("Sin bio");
     });
 });
