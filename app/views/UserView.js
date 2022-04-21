@@ -6,7 +6,10 @@ class UserView{
         else if(typeof payload.username != "string" && typeof payload.name != "string" && typeof payload.id != "number"){
             return {error: "Los valores del payload necesitan tener un valor válido"}
         } else if(isNaN(payload.username) || isNaN(payload.name) || isNaN(payload.id)){
-            return {error: "Los valores del payload necesitan tener un valor válido"}
+            return {error: "Los valores del payload necesitan tener un valor válido2"}
+        } else{
+            const user = UserService.create(payload.id, payload.username, payload.name)
+            return user
         }
     }
 }
